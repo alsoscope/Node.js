@@ -43,6 +43,10 @@ Converts all elements in array into a string separated by separator.
         _.join(['a', 'b', 'c'], '~');
         // => 'a~b~c'
 
+- 사용
+
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+        
 ref https://velog.io/@decody/Webpack-%EC%84%A4%EC%A0%95
 
 https://developer.mozilla.org/ko/docs/Web/API/Element/innerHTML
