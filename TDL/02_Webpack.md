@@ -22,7 +22,7 @@ npm 으로 설치한다. 로컬(local) 설치.<br>
 
         npm init -y //-y는 default 설치
         
-npm init -y<br>
+`npm init -y`<br>
 npm으로 package.json 생성하기.<br>
 package.json 에서 프로젝트 정보를 관리할 수 있다.
 
@@ -42,7 +42,8 @@ package.json 에서<br>
 코드가 실수로 배포되는 것을 방지해준다.
 
   
-2.
+2. 실행
+
 index.html
 
     <!doctype html>
@@ -71,8 +72,10 @@ index.js
 **Element.innerHTML**<br>
 Element 속성(property) innerHTML은 요소(element) 내에 포함된 HTML 또는 XML 마크업을 가져오거나 설정한다.
 
+---
+
 **_.join(array, [separator=','])**<br>
-//Lodash, currently included via a script, is required for this line to work<br>
+__Lodash__, currently included via a script, is required for this line to work<br>
 자바 스크립트 유틸리티 라이브러리.
 
 Converts all elements in array into a string separated by separator.
@@ -92,21 +95,21 @@ Converts all elements in array into a string separated by separator.
 - index.html lodash CDN 경로<br>
   `<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>`
 
+---
+
 3. Visual Studio Code - __Live Server__ 설정
 
     VS 코드의 라이브 서버 플러그인을 이용하면 로컬에서 파일을 실행할 수 있다.<br>
     에디터에서 수정 후 저장을 하면 로컬 서버에 바로 반영이 된다.
 
 - 라이브 서버 설치<br>
-    File Preferences Settings<br>
-    또는 Ctrl + Shift + X 로 Extensions 활용
+    - File Preferences Settings 또는 Ctrl + Shift + X 로 Extensions 활용
 
-    live server 검색하고 설치한다.
+    - live server 검색하고 설치한다.
 
-    Explorer (탐색기) 에서 테스트용 폴더 추가, 파일 작성한다. (html:5 입력하면 자동완성 된다.)
+    - Explorer (탐색기) 에서 테스트용 폴더 추가, 파일 작성한다. (html:5 입력하면 자동완성)
 
-    코드 탭에서 오른쪽 클릭, Open with Live Server 클릭,<br>
-    혹은 Alt + L, Alt + O 입력한다.
+    - 코드 탭에서 오른쪽 클릭, Open with Live Server 클릭, 또는 Alt + L, Alt + O 입력.
 
     로컬 서버로 코드가 렌더링 된다.
     
@@ -125,8 +128,8 @@ Converts all elements in array into a string separated by separator.
     |--node-modules
     |--package.json
 
-root 경로의 index.html 삭제하고, /src 폴더의 소스코드와 /dist(distribution) 폴더로 배포 코드를 분리한다.
-소스코드 : 우리가 만들고 수정하는 코드
+root 경로의 index.html 삭제. /src 폴더의 소스코드와 /dist(distribution) 폴더로 배포 코드를 분리한다.<br>
+소스코드 : 우리가 만들고 수정하는 코드<br>
 배포코드 : 브라우저에서 로드될 최소화(minimized), 최적화(optimized) 된 빌드 프로세스의 최종 output이다.
 
 /dist/index.html
