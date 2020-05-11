@@ -152,7 +152,24 @@ root 경로의 index.html 삭제. /src 폴더의 소스코드와 /dist(distribut
 CLI 환경에서 웹팩 번들링을 실행한다.
 
     npx webpack
-    
+
+        c:\_dev\_nodejs\tdl\webpack-demo>npx webpack
+        Hash: dfd4b6af932ae1fa50ef
+        Version: webpack 4.43.0
+        Time: 112ms
+        Built at: 2020-05-11 21:18:01
+          Asset      Size  Chunks             Chunk Names
+        main.js  1.04 KiB       0  [emitted]  main
+        Entrypoint main = main.js
+        [0] ./src/index.js 270 bytes {0} [built]
+
+        WARNING in configuration
+        The 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.
+        You can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/
+
+태그로 추가한 src/main.js script를 진입점entry point,<br>
+/dist 경로에 main.js output이 생성된다.
+
 /dist/index.html을 Live Server로 실행한다.
 
 ref https://velog.io/@decody/Webpack-%EC%84%A4%EC%A0%95<br>
