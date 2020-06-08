@@ -79,3 +79,11 @@ https://nodejs.org/ko/download/package-manager/#windows
 그 밖의 방법으로
 
 Chocolatey , Scoop을 사용 할 수 있다고 한다.
+
+msi 파일 LTS 버전으로 덮어쓰기함.
+
+      C:\Users\a>node -v
+      v10.15.0
+
+      C:\Users\a>node -v
+      v12.18.0
